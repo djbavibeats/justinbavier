@@ -1,9 +1,8 @@
-import { OrthographicCamera, OrbitControls, shaderMaterial, useVideoTexture } from '@react-three/drei'
+import { OrbitControls, shaderMaterial, SoftShadows, BakeShadows } from '@react-three/drei'
 import { Canvas, extend, useThree, useFrame, useLoader } from '@react-three/fiber'
 import { useRef, useEffect, useState } from 'react'
 import * as THREE from 'three'
 import { CubeTextureLoader } from 'three'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 import vertex from './assets/shaders/home/vertex.glsl'
 import fragment from './assets/shaders/home/fragment.glsl'
@@ -61,7 +60,7 @@ const ShaderObject = () => {
     console.log(shaderObject.current.material)
   }, [ cubeMap ])
 
-  return <mesh position={[ 0.0, 0.0, 0.0 ]}  scale={ 0.25 } ref={ shaderObject }>
+  return <mesh position={[ 0.0, 0.0, 0.0 ]}  scale={ 0.25 } ref={ shaderObject } receiveShadow={ true } castShadow={ true }>
     <sphereGeometry args={[ 1.0, 512.0, 512.0 ]} />
     <shaderObjectMaterial />
   </mesh>

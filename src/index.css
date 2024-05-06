@@ -31,14 +31,14 @@ canvas {
 }
 
 .justin-bavier {
-  /* font-family: 'Bazinga'; */
+  font-family: 'Roboto Mono', monospace;
   font-size: 36px;
   color: #eef;
 }
 
 .link-wrapper {
   background: #00000044;
-  border: 3px solid #eef;
+  border: 2px solid #eef;
   padding: 15px 25px;
   border-radius: 7px;
   text-align: center;
@@ -63,7 +63,8 @@ canvas {
 a {
   text-decoration: none;
   color: #eef;
-  /* font-family: 'Bazinga'; */
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
