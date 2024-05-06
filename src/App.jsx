@@ -97,10 +97,10 @@ export default function App() {
           <div className="bottom-content-wrapper">
               <p className="justin-bavier">Justin Bavier</p>
               <div className="link-wrapper volt" id="volt">
-                  <a href="">VOLT CREATIVE</a>
+                  <a href="https://voltcreative.com" target="_blank">Volt Creative</a>
               </div>
               <div className="link-wrapper tpk" id="tpk">
-                  <a href="">THE PRESSURE KIDS</a>
+                  <a href="https://open.spotify.com/artist/7z3MQUxX76zkDWG52PkI0C?si=aY7w-0olQpyFd2RgAbowyA" target="_blank">The Pressure Kids</a>
               </div>
           </div>
       </div>

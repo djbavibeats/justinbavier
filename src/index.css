@@ -31,7 +31,7 @@ canvas {
 }
 
 .justin-bavier {
-  font-family: 'Bazinga';
+  /* font-family: 'Bazinga'; */
   font-size: 36px;
   color: #eef;
 }
@@ -63,7 +63,7 @@ canvas {
 a {
   text-decoration: none;
   color: #eef;
-  font-family: 'Bazinga';
+  /* font-family: 'Bazinga'; */
 }
 
 @media only screen and (max-width: 768px) {
