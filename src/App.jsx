@@ -52,8 +52,8 @@ const ShaderObject = () => {
 
   useFrame((state) => {
     shaderObject.current.material.uTime = state.clock.elapsedTime
-    shaderObject.current.rotation.y += 0.009;
-    shaderObject.current.rotation.x += 0.005;
+    shaderObject.current.rotation.y += 0.0045;
+    shaderObject.current.rotation.x += 0.0025;
   })
 
   useEffect(() => {

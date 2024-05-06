@@ -68,9 +68,10 @@ void main() {
 
     float x = remap(sin(uTime), -1.0, 1.0, 0.125, 1.0);
     // float x = vUvs.x * sin(uTime);
-    float y = remap(cos(uTime), -1.0, 1.0, 0.125, 1.0);
+    float g = remap(cos(uTime), -1.0, 1.0, 0.05, 0.5);
+    float y = remap(cos(uTime), -1.0, 1.0, 0.5, 1.0);
     // float y = vUvs.y * sin(uTime);
-    vec3 color = vec3(x, 0.0, y);
+    vec3 color = vec3(x, g, y);
     color = color * lighting + specular;
 
     gl_FragColor = vec4(color, 1.0);

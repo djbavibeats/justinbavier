@@ -15,8 +15,8 @@ float remap(float v, float inMin, float inMax, float outMin, float outMax) {
 
 void main() {
     vec3 localSpacePosition = position;
-    float t = sin(localSpacePosition.y * 5.0 - uTime * 5.0);
-    t *= sin(localSpacePosition.x * 5.0 + uTime * 0.6);
+    float t = sin(localSpacePosition.y * 5.0 - uTime * 0.25);
+    t *= sin(localSpacePosition.x * 5.0 + uTime * 0.125);
     t = remap(t, -1.0, 1.0, 0.0, 0.125);
     localSpacePosition += normal * t;
 
